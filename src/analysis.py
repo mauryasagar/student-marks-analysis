@@ -23,3 +23,13 @@ df["result"] = df[["maths", "science", "english"]].apply(
     lambda row: "Pass" if all(row >= 40) else "Fail", axis=1
 )
 print(df[["name", "average", "result"]])
+
+# Create a bar chart of average marks
+plt.figure(figsize=(8, 5))
+plt.bar(df["name"], df["average"], color="steelblue")
+plt.title("Average Marks per Student")
+plt.xlabel("Student Name")
+plt.ylabel("Average Marks")
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig("outputs/average_marks.png")
