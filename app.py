@@ -18,3 +18,7 @@ df["result"] = df[["maths", "science", "english"]].apply(
 
 # Display the data as an interactive table
 st.dataframe(df)
+
+# Display the bar chart
+st.subheader("Average Marks Chart")
+st.bar_chart(df.set_index("name")["average"])
