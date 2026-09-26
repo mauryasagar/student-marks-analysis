@@ -15,10 +15,18 @@ A small dataset of 8 students with marks in Maths, Science, and English.
 ## Chart
 <img src="outputs/average_marks.png" width="500">
 
+## Live Dashboard
+An interactive web dashboard built with Streamlit is included.
+To run it locally:
+```bash
+python -m streamlit run app.py
+```
+
 ## Tools Used
 - Python
 - pandas (data loading and analysis)
 - matplotlib (visualization)
+- Streamlit (interactive dashboard)
 
 ## Project Structure
 ```text
@@ -29,6 +37,7 @@ student-marks-analysis/
 │   └── average_marks.png  # Generated bar chart
 ├── src/
 │   └── analysis.py        # Analysis script
+├── app.py                 # Streamlit dashboard
 ├── .gitignore
 ├── LICENSE
 ├── README.md
@@ -37,15 +46,25 @@ student-marks-analysis/
 
 ## How to Run
 1. Install dependencies:
+
    ```bash
-   pip install pandas matplotlib
+   pip install pandas matplotlib streamlit
    ```
+
 2. Run the analysis script from the project root:
+
    ```bash
    python src/analysis.py
+   ```
+   
+3. Run the interactive dashboard:
+
+   ```bash
+   python -m streamlit run app.py
    ```
 
 ## Output
 - Prints the full data table with total, average, and result columns
 - Prints topper and class average
 - Saves a bar chart to `outputs/average_marks.png`
+- Displays an interactive web dashboard
