@@ -16,7 +16,8 @@ A small dataset of 8 students with marks in Maths, Science, and English.
 <img src="outputs/average_marks.png" width="500">
 
 ## Live Dashboard
-[Click here to view the live dashboard](https://student-marks-analysis-dashboard.streamlit.app)
+
+<a href="https://student-marks-analysis-dashboard.streamlit.app" target="_blank">View Live Dashboard</a>
 
 To run it locally:
 ```bash
