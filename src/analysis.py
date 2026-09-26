@@ -17,3 +17,9 @@ print("Topper:", topper)
 # Calculate the overall class average
 class_average = df["average"].mean()
 print("Class Average:", round(class_average, 2))
+
+# Determine pass/fail (pass = 40 or more in all subjects)
+df["result"] = df[["maths", "science", "english"]].apply(
+    lambda row: "Pass" if all(row >= 40) else "Fail", axis=1
+)
+print(df[["name", "average", "result"]])
