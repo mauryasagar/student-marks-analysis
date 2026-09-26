@@ -16,7 +16,8 @@ A small dataset of 8 students with marks in Maths, Science, and English.
 <img src="outputs/average_marks.png" width="500">
 
 ## Live Dashboard
-An interactive web dashboard built with Streamlit is included.
+[Click here to view the live dashboard](https://student-marks-analysis-dashboard.streamlit.app)
+
 To run it locally:
 ```bash
 python -m streamlit run app.py
@@ -56,7 +57,7 @@ student-marks-analysis/
    ```bash
    python src/analysis.py
    ```
-   
+
 3. Run the interactive dashboard:
 
    ```bash
