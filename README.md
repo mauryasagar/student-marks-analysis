@@ -70,3 +70,7 @@ student-marks-analysis/
 - Prints topper and class average
 - Saves a bar chart to `outputs/average_marks.png`
 - Displays an interactive web dashboard
+
+## Blog
+
+Read the full write-up on [_Dev.to_](https://dev.to/sagarmaurya/building-a-student-marks-dashboard-from-data-to-live-web-app-3hgd)
